@@ -1,12 +1,18 @@
+import logo from "./logo.svg";
+
 function App() {
   return (
     <div>
-      <header className="h-32 bg-yellow-100 p-3">
-        <p className="text-3xl font-extrabold text-center">Héctor López</p>
-        <p className="text-sm font-semibold text-center mt-3">
-          Work in progress
-        </p>
+      <header>
+        <nav className="h-32 flex justify-evenly items-center ">
+          <img src={logo} className="w-10 h-10" alt="logo" />
+          <p className="text-3xl font-bold text-center">About</p>
+          <p className="text-3xl font-bold text-center">Works</p>
+          <p className="text-3xl font-bold text-center">5505</p>
+          <p className="text-3xl font-bold text-center">Contact</p>
+        </nav>
       </header>
+      <body className="h-screen bg-neutral-800"></body>
     </div>
   );
 }
