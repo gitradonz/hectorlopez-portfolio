@@ -1,10 +1,92 @@
 import logo from "./logo.svg";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import placeholder from "../src/Images/placeholder.jpg";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   return (
     <Router>
+      <AbsoluteMenu />
+      <AnimatedRoutes />
+    </Router>
+  );
+}
+
+export default App;
+
+function FiveFiveOFive() {
+  return (
+    <motion.div
+      className="h-screen flex justify-center items-center"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0 }}
+    >
+      5505
+    </motion.div>
+  );
+}
+
+function About() {
+  return (
+    <motion.div
+      className="h-screen flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0 }}
+    >
+      ABOUT
+    </motion.div>
+  );
+}
+
+function Work() {
+  return (
+    <motion.div
+      className="h-screen flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0 }}
+    >
+      WORK
+    </motion.div>
+  );
+}
+
+function Contact() {
+  return (
+    <motion.div
+      className="h-screen flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0 }}
+    >
+      CONTACT
+    </motion.div>
+  );
+}
+
+function Home() {
+  return (
+    <motion.div
+      className="h-screen flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0 }}
+    >
+      HOME
+    </motion.div>
+  );
+}
+
+function AbsoluteMenu() {
+  return (
+    <>
       <div className="absolute h-screen w-screen flex justify-evenly p-7 bg-transparent">
         <Link
           to="/about"
@@ -37,39 +119,22 @@ function App() {
       <div className="absolute top-1/2 right-10 text-gray-300">
         {"hectxrlxpez®"}
       </div>
-      <Routes>
+    </>
+  );
+}
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/5505" element={<FiveFiveOFive />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
-  );
-}
-
-export default App;
-
-function FiveFiveOFive() {
-  return <div className="h-screen flex justify-center items-center">5505</div>;
-}
-
-function About() {
-  return <div className="h-screen flex justify-center items-center">ABOUT</div>;
-}
-
-function Work() {
-  return <div className="h-screen flex justify-center items-center">WORK</div>;
-}
-
-function Contact() {
-  return (
-    <div className="h-screen flex justify-center items-center">CONTACT</div>
-  );
-}
-
-function Home() {
-  return (
-    <img className="h-screen w-screen" src={placeholder} alt="placeholder" />
+    </AnimatePresence>
   );
 }
