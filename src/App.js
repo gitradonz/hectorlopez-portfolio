@@ -22,7 +22,7 @@ export default App;
 function FiveFiveOFive() {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-gray-800"
       initial={{ opacity: 1 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
@@ -35,7 +35,7 @@ function FiveFiveOFive() {
 function About() {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-gray-800"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
@@ -48,7 +48,7 @@ function About() {
 function Work() {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-gray-800"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
@@ -61,7 +61,7 @@ function Work() {
 function Contact() {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-gray-800"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
@@ -74,7 +74,7 @@ function Contact() {
 function Home() {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-gray-800"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
@@ -86,8 +86,8 @@ function Home() {
 
 function AbsoluteMenu() {
   return (
-    <>
-      <div className="absolute h-screen w-screen flex justify-evenly p-7 bg-transparent">
+    <div className="absolute z-10">
+      <div className=" h-screen w-screen flex justify-evenly p-7">
         <Link
           to="/about"
           className="text-3xl font-bold text-center text-gray-300"
@@ -98,7 +98,7 @@ function AbsoluteMenu() {
           to="/work"
           className="text-3xl font-bold text-center h-10 text-gray-300"
         >
-          Works
+          Work
         </Link>
         <Link
           to="/5505"
@@ -119,7 +119,7 @@ function AbsoluteMenu() {
       <div className="absolute top-1/2 right-10 text-gray-300">
         {"hectxrlxpez®"}
       </div>
-    </>
+    </div>
   );
 }
 
