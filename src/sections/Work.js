@@ -10,12 +10,12 @@ export default function Work() {
     >
       <div className="flex flex-col h-screen w-screen gap-7">
         <div className="flex justify-between gap-7 h-full w-full">
-          <div className="w-full h-full bg-gray-400" />
-          <div className="w-full h-full bg-gray-400" />
+          <div className="w-full h-full bg-gray" />
+          <div className="w-full h-full bg-gray" />
         </div>
         <div className="flex justify-between gap-7 h-full w-full">
-          <div className="w-full h-full bg-gray-400" />
-          <div className="w-full h-full bg-gray-400" />
+          <div className="w-full h-full bg-gray" />
+          <div className="w-full h-full bg-gray" />
         </div>
       </div>
     </motion.div>
