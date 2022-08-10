@@ -31,7 +31,7 @@ export default function AbsoluteMenu() {
         </div>
         <div className="flex justify-evenly pb-7 absolute bottom-0 items-center w-screen">
           <a
-            href="http://www.instagra.com"
+            href="https://www.instagram.com/hectxrlxpez/"
             target={"_blank"}
             rel="noreferrer"
             className="text-2xl text-center h-10 text-white"
@@ -39,26 +39,26 @@ export default function AbsoluteMenu() {
             ig
           </a>
           <a
-            href="http://www.instagra.com"
+            href="https://www.linkedin.com/in/h%C3%A9ctor-l%C3%B3pez-mart%C3%ADnez-b68496198/"
             target={"_blank"}
             rel="noreferrer"
-            className="text-2xl  text-center h-10 text-white"
+            className="text-2xl text-center h-10 text-white"
           >
             in
           </a>{" "}
           <a
-            href="http://www.instagra.com"
+            href="http://www.xvideos.com"
             target={"_blank"}
             rel="noreferrer"
-            className="text-2xl  text-center h-10 text-white"
+            className="text-2xl text-center h-10 text-white"
           >
             be
           </a>{" "}
           <a
-            href="http://www.instagra.com"
+            href="https://www.facebook.com/hectxrlxpez"
             target={"_blank"}
             rel="noreferrer"
-            className="text-2xl  text-center h-10 text-white"
+            className="text-2xl text-center h-10 text-white"
           >
             fb
           </a>
