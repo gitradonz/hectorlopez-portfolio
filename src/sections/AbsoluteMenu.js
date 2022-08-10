@@ -6,20 +6,20 @@ export default function AbsoluteMenu() {
     <>
       <div className="absolute z-10 h-screen w-screen">
         <div className="flex justify-evenly pt-7">
-          <Link to="/about" className="text-3xl text-center h-10 text-white">
+          <Link to="/about" className="text-2xl text-center h-10 text-white">
             About
           </Link>
-          <Link to="/work" className="text-3xl text-center h-10 text-white">
+          <Link to="/work" className="text-2xl text-center h-10 text-white">
             Work
           </Link>
-          <Link to="/5505" className="text-3xl text-center h-10 text-white">
+          <Link to="/5505" className="text-2xl text-center h-10 text-white">
             5505
           </Link>
-          <Link to="/contact" className="text-3xl text-center h-10 text-white">
+          <Link to="/contact" className="text-2xl text-center h-10 text-white">
             Contact
           </Link>
         </div>
-        <Link to="/" className="text-3xl text-center h-10">
+        <Link to="/" className="h-10">
           <img
             className="absolute top-1/2 left-5 w-24 -translate-y-6"
             src={logo}
@@ -34,7 +34,7 @@ export default function AbsoluteMenu() {
             href="http://www.instagra.com"
             target={"_blank"}
             rel="noreferrer"
-            className="text-3xl text-center h-10 text-white"
+            className="text-2xl text-center h-10 text-white"
           >
             ig
           </a>
@@ -42,7 +42,7 @@ export default function AbsoluteMenu() {
             href="http://www.instagra.com"
             target={"_blank"}
             rel="noreferrer"
-            className="text-3xl  text-center h-10 text-white"
+            className="text-2xl  text-center h-10 text-white"
           >
             in
           </a>{" "}
@@ -50,7 +50,7 @@ export default function AbsoluteMenu() {
             href="http://www.instagra.com"
             target={"_blank"}
             rel="noreferrer"
-            className="text-3xl  text-center h-10 text-white"
+            className="text-2xl  text-center h-10 text-white"
           >
             be
           </a>{" "}
@@ -58,7 +58,7 @@ export default function AbsoluteMenu() {
             href="http://www.instagra.com"
             target={"_blank"}
             rel="noreferrer"
-            className="text-3xl  text-center h-10 text-white"
+            className="text-2xl  text-center h-10 text-white"
           >
             fb
           </a>
