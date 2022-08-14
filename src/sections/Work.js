@@ -61,7 +61,7 @@ export default function Work() {
 
 function EachWork({ title, variants }) {
   return (
-    <div className="w-full h-full bg-gray flex justify-center items-center pt-44">
+    <div className="w-full h-full bg-gray flex justify-center items-center">
       <motion.div
         initial="rest"
         whileHover="hover"
