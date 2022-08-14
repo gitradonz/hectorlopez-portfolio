@@ -5,18 +5,27 @@ export default function AbsoluteMenu() {
   return (
     <div>
       <div className="flex justify-evenly pt-7 fixed top-0 items-center w-screen z-50">
-        <Link to="/about" className="text-2xl text-center h-10 text-white z-50">
+        <Link
+          to="/about"
+          className="text-2xl text-center h-10 text-white z-50 hover:text-yellow transition-all duration-300"
+        >
           About
         </Link>
-        <Link to="/work" className="text-2xl text-center h-10 text-white z-50">
+        <Link
+          to="/work"
+          className="text-2xl text-center h-10 text-white z-50 hover:text-yellow transition-all duration-300"
+        >
           Work
         </Link>
-        <Link to="/5505" className="text-2xl text-center h-10 text-white z-50">
+        <Link
+          to="/5505"
+          className="text-2xl text-center h-10 text-white z-50 hover:text-yellow transition-all duration-300"
+        >
           5505
         </Link>
         <Link
           to="/contact"
-          className="text-2xl text-center h-10 text-white z-50"
+          className="text-2xl text-center h-10 text-white z-50 hover:text-yellow transition-all duration-300"
         >
           Contact
         </Link>
@@ -28,7 +37,7 @@ export default function AbsoluteMenu() {
           alt="logo"
         />
       </Link>
-      <div className="absolute top-1/2 right-7 text-white text-lg -translate-y-3.5 italic z-50">
+      <div className="absolute top-1/2 right-7 text-white text-lg -translate-y-3.5 italic z-50 hover:text-yellow transition-all duration-300">
         {"hectxrlxpez®"}
       </div>
       <div className="flex justify-evenly pb-7 fixed bottom-0 items-center w-screen z-50">
@@ -36,7 +45,7 @@ export default function AbsoluteMenu() {
           href="https://www.instagram.com/hectxrlxpez/"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white z-50"
+          className="text-2xl text-center h-10 text-white z-50  hover:text-yellow hover:scale-150 transition-all duration-300"
         >
           ig
         </a>
@@ -44,7 +53,7 @@ export default function AbsoluteMenu() {
           href="https://www.linkedin.com/in/h%C3%A9ctor-l%C3%B3pez-mart%C3%ADnez-b68496198/"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white z-50"
+          className="text-2xl text-center h-10 text-white z-50  hover:text-yellow hover:scale-150 transition-all duration-300"
         >
           in
         </a>{" "}
@@ -52,7 +61,7 @@ export default function AbsoluteMenu() {
           href="https://www.behance.net/hectxr"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white z-50"
+          className="text-2xl text-center h-10 text-white z-50  hover:text-yellow hover:scale-150 transition-all duration-300"
         >
           be
         </a>{" "}
@@ -60,7 +69,7 @@ export default function AbsoluteMenu() {
           href="https://www.facebook.com/hectxrlxpez"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white z-50"
+          className="text-2xl text-center h-10 text-white z-50 hover:text-yellow hover:scale-150 transition-all duration-300"
         >
           fb
         </a>
