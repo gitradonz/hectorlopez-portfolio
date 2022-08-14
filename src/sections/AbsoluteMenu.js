@@ -3,8 +3,8 @@ import logo from "../Images/logo.svg";
 
 export default function AbsoluteMenu() {
   return (
-    <div className="absolute h-screen w-screen z-50">
-      <div className="flex justify-evenly pt-7 fixed top-0 items-center w-screen ">
+    <div>
+      <div className="flex justify-evenly pt-7 fixed top-0 items-center w-screen z-50">
         <Link to="/about" className="text-2xl text-center h-10 text-white z-50">
           About
         </Link>
@@ -23,20 +23,20 @@ export default function AbsoluteMenu() {
       </div>
       <Link to="/">
         <img
-          className="pl-7 fixed top-1/2 items-center w-36 -translate-y-8"
+          className="pl-7 fixed top-1/2 items-center w-36 -translate-y-8 z-50"
           src={logo}
           alt="logo"
         />
       </Link>
-      <div className="absolute top-1/2 right-7 text-white text-lg -translate-y-3.5 italic">
+      <div className="absolute top-1/2 right-7 text-white text-lg -translate-y-3.5 italic z-50">
         {"hectxrlxpez®"}
       </div>
-      <div className="flex justify-evenly pb-7 fixed bottom-0 items-center w-screen">
+      <div className="flex justify-evenly pb-7 fixed bottom-0 items-center w-screen z-50">
         <a
           href="https://www.instagram.com/hectxrlxpez/"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white"
+          className="text-2xl text-center h-10 text-white z-50"
         >
           ig
         </a>
@@ -44,7 +44,7 @@ export default function AbsoluteMenu() {
           href="https://www.linkedin.com/in/h%C3%A9ctor-l%C3%B3pez-mart%C3%ADnez-b68496198/"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white"
+          className="text-2xl text-center h-10 text-white z-50"
         >
           in
         </a>{" "}
@@ -52,7 +52,7 @@ export default function AbsoluteMenu() {
           href="https://www.behance.net/hectxr"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white"
+          className="text-2xl text-center h-10 text-white z-50"
         >
           be
         </a>{" "}
@@ -60,7 +60,7 @@ export default function AbsoluteMenu() {
           href="https://www.facebook.com/hectxrlxpez"
           target={"_blank"}
           rel="noreferrer"
-          className="text-2xl text-center h-10 text-white"
+          className="text-2xl text-center h-10 text-white z-50"
         >
           fb
         </a>
