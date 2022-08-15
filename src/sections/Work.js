@@ -4,7 +4,7 @@ const variantsLeft = {
   rest: {
     opacity: 0,
     transition: {
-      duration: 2,
+      duration: 0.5,
       type: "tween",
       ease: "easeInOut",
     },
@@ -12,7 +12,7 @@ const variantsLeft = {
   hover: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.5,
       type: "tween",
       ease: "easeInOut",
     },
@@ -22,7 +22,7 @@ const variantsRight = {
   rest: {
     opacity: 0,
     transition: {
-      duration: 2,
+      duration: 0.5,
       type: "tween",
       ease: "easeInOut",
     },
@@ -30,7 +30,7 @@ const variantsRight = {
   hover: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.5,
       type: "tween",
       ease: "easeInOut",
     },
@@ -46,50 +46,107 @@ export default function Work() {
       exit={{ opacity: 0 }}
     >
       <div className="flex flex-col h-screen w-full gap-7 mb-7">
-        <div className="flex gap-7 h-full max-w-full">
-          <EachWork title="WINGSTOWN BRAND - " variants={variantsLeft} />
-          <EachWork title="5505 - " variants={variantsRight} />
+        <div className="flex gap-7 h-full w-full">
+          <EachWork
+            title="  WINGSTOWN BRAND  -  "
+            variants={variantsLeft}
+            lado={"izq"}
+          />
+          <EachWork title=" 5505 - " variants={variantsRight} lado={"der"} />
         </div>
         <div className="flex gap-7 h-full w-full">
-          <EachWork title="MO-MAD - " variants={variantsLeft} />
-          <EachWork title="HANGAR - " variants={variantsRight} />
+          <EachWork title=" MO-MAD - " variants={variantsLeft} lado={"izq"} />
+          <EachWork title=" HANGAR - " variants={variantsRight} lado={"der"} />
         </div>
       </div>
       <div className="flex flex-col h-screen w-full gap-7">
         <div className="flex gap-7 h-full w-full">
-          <EachWork title="OPTICA EL ALTET - " variants={variantsLeft} />
-          <EachWork title="ACC. COSTABLANCA - " variants={variantsRight} />
+          <EachWork
+            title=" OPTICA EL ALTET  -  "
+            variants={variantsLeft}
+            lado={"izq"}
+          />
+          <EachWork
+            title=" ACC. COSTABLANCA  -  "
+            variants={variantsRight}
+            lado={"der"}
+          />
         </div>
         <div className="flex gap-7 h-full w-full">
-          <EachWork title="OTROS - " variants={variantsLeft} />
-          <EachWork title="SP5505 - " variants={variantsRight} />
+          <EachWork title=" OTROS  -  " variants={variantsLeft} lado={"izq"} />
+          <EachWork
+            title=" SP5505  -  "
+            variants={variantsRight}
+            lado={"der"}
+          />
         </div>
       </div>
     </motion.div>
   );
 }
 
-function EachWork({ title, variants }) {
+function EachWork({ title, variants, lado }) {
   return (
-    <div className="w-full h-full bg-gray flex justify-center items-center">
+    <div className="w-full h-full bg-gray">
       <motion.div
         initial="rest"
         whileHover="hover"
         animate="rest"
-        className="w-full h-full flex justify-center items-center z-20 whitespace-nowrap"
+        className="w-full h-full"
       >
-        <motion.div
-          variants={variants}
-          className=" text-yellow text-[32px] overflow-hidden w-full"
-        >
-          <div className="relative overflow-hidden scroll-text">
-            <span>
-              {title}
-              {title}
-            </span>
-          </div>
+        <motion.div variants={variants} className="text-yellow text-[64px]">
+          {lado === "izq" ? (
+            <MarqueeIzq title={title} />
+          ) : (
+            <Marquee title={title} />
+          )}
         </motion.div>
       </motion.div>
     </div>
+  );
+}
+
+function MarqueeIzq({ title }) {
+  return (
+    <p className="marqueeIzq">
+      <span>
+        {title}
+        {title}
+        {title}
+        {title}
+      </span>
+    </p>
+  );
+}
+function Marquee({ title }) {
+  return (
+    <p className="marquee">
+      <span>
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+      </span>
+    </p>
   );
 }
