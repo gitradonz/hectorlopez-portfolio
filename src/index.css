@@ -23,3 +23,40 @@ code {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+
+
+.scroll-text {
+  display: flex;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 3s linear infinite;
+  -webkit-animation: my-animation 3s linear infinite;
+  animation: my-animation 3s linear infinite;
+}
+
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100px); }
+  to { -moz-transform: translateX(-100px); }
+}
+
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100px); }
+  to { -webkit-transform: translateX(-100px); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  to {
+    -moz-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+} 
+
