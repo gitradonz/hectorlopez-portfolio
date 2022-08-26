@@ -114,6 +114,26 @@ function MarqueeIzq({ title }) {
         {title}
         {title}
         {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
+        {title}
       </span>
     </p>
   );

@@ -51,7 +51,7 @@ code {
 
 .marqueeIzq {
   transform: translateY(200%);
-  margin: 0 auto;
+  margin: 0 50% 0 0;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
@@ -65,9 +65,9 @@ code {
 
 @keyframes animationn {
   0% {
-    transform: translate(50%, 0);
+    transform: translate(-50%, 0);
   }
   100% {
-    transform: translate(100%, 0);
+    transform: translate(0, 0);
   }
 }
