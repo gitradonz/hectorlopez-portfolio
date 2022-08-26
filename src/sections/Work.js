@@ -112,7 +112,7 @@ function EachWork({ title, variants, lado }) {
 function MarqueeIzq({ title }) {
   return (
     <p className="marqueeIzq">
-      <span>
+      <span className="noSelectable">
         {title}
         {title}
         {title}
@@ -144,7 +144,7 @@ function MarqueeIzq({ title }) {
 function Marquee({ title }) {
   return (
     <p className="marquee">
-      <span>
+      <span className="noSelectable">
         {title}
         {title}
         {title}
