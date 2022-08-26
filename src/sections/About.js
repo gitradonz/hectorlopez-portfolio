@@ -15,11 +15,13 @@ export default function About() {
       </div>
       <div className="flex">
         <div className="h-screen w-1/2 bg-gray"></div>
-        <div className="h-screen w-1/2 bg-black text-white flex flex-col justify-center items-center gap-7 pt-24">
-          <p className="w-96">{bio1}</p>
-          <p className="w-96">{bio2}</p>
-          <p className="w-96">{bio3}</p>
-          <p className="w-96">{bio4}</p>
+        <div className="h-screen w-1/2 bg-black">
+          <div className="absolute noSelectable right-[20%] top-[40%] text-white">
+            <p className="w-96 mb-5">{bio1}</p>
+            <p className="w-96 mb-5">{bio2}</p>
+            <p className="w-96 mb-5">{bio3}</p>
+            <p className="w-96 mb-5">{bio4}</p>
+          </div>
         </div>
       </div>
       <div className="flex flex-col">
