@@ -94,7 +94,10 @@ function EachWork({ title, variants, lado }) {
         animate="rest"
         className="w-full h-full"
       >
-        <motion.div variants={variants} className="text-yellow text-[64px]">
+        <motion.div
+          variants={variants}
+          className="text-yellow text-[64px] font-semibold"
+        >
           {lado === "izq" ? (
             <MarqueeIzq title={title} />
           ) : (
