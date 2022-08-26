@@ -50,8 +50,9 @@ code {
 
 
 .marqueeIzq {
+  width: 49%;
   transform: translateY(200%);
-  margin: 0 50% 0 0;
+  margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
@@ -68,6 +69,6 @@ code {
     transform: translate(-50%, 0);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0%, 0);
   }
 }
