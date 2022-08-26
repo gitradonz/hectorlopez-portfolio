@@ -37,7 +37,7 @@ export default function AbsoluteMenu() {
           alt="logo"
         />
       </Link>
-      <div className="absolute top-1/2 right-7 text-white text-lg -translate-y-3.5 italic z-50 hover:text-yellow transition-all duration-300 noSelectable">
+      <div className="fixed top-1/2 right-7 text-white text-lg -translate-y-3.5 italic z-50 hover:text-yellow transition-all duration-300 noSelectable">
         {"hectxrlxpez®"}
       </div>
       <div className="flex justify-evenly pb-7 fixed bottom-0 items-center w-screen z-50">
