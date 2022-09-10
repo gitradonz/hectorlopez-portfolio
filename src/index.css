@@ -89,7 +89,7 @@ code {
 .movingBanner {
   position: absolute;
   white-space: nowrap;
-  animation: animate 250s linear infinite;
+  animation: animate 500s linear infinite;
 }
 
 @keyframes animate {
