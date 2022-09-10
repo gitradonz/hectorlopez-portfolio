@@ -30,9 +30,7 @@ export default function About() {
           <p>{`logo design · poster design · web design`}</p>
           <p>{`photography · packaging · clothing · visual content`}</p>
         </div>
-        <div className="h-[576px] w-screen bg-gray text-center pt-3">
-          MAS COSAS
-        </div>
+        <div className="h-[576px] w-screen bg-gray text-center pt-3"></div>
         {/* EXPERIENCE */}
         <div className="h-[576px] w-screen text-center">
           <ExperienceBanner />
@@ -72,9 +70,6 @@ export default function About() {
             site={"Alc, Spain"}
           />
           <ExperienceBanner />
-        </div>
-        <div className="h-[576px] w-screen bg-gray text-center pt-3">
-          MAS COSAS
         </div>
       </div>
     </motion.div>
