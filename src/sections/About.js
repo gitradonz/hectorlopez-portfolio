@@ -25,8 +25,10 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-col">
-        <div className="h-72 w-screen bg-black text-white text-center pt-3">
-          COSAS
+        <div className="h-72 w-screen bg-black text-white text-center flex flex-col gap-7 justify-center text-5xl font-semibold">
+          <p>{`brand identity · content creation · editorial design`}</p>
+          <p>{`logo design · poster design · web design`}</p>
+          <p>{`photography · packaging · clothing · visual content`}</p>
         </div>
         <div className="h-[576px] w-screen bg-gray text-center pt-3">
           MAS COSAS
