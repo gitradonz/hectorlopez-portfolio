@@ -85,3 +85,18 @@ code {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+
+.movingBanner {
+  position: absolute;
+  white-space: nowrap;
+  animation: animate 250s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateX(0);
+  } 
+  100%{
+    transform: translateX(-100%);
+  }
+}
