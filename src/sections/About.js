@@ -34,6 +34,7 @@ export default function About() {
         {/* EXPERIENCE */}
         <div className="h-[576px] w-screen text-center">
           <ExperienceBanner />
+          <div className="h-7"></div>
           <Experiences
             company={"Freelance"}
             time={"Always"}
