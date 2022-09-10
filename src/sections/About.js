@@ -33,10 +33,76 @@ export default function About() {
         <div className="h-[576px] w-screen bg-gray text-center pt-3">
           MAS COSAS
         </div>
+        {/* EXPERIENCE */}
+        <div className="h-[576px] w-screen text-center">
+          <ExperienceBanner />
+          <Experiences
+            company={"Freelance"}
+            time={"Always"}
+            site={"Anywhere"}
+          />
+          <Experiences
+            company={"You are the princess"}
+            time={"from JUN22"}
+            site={"Mad, Spain"}
+          />
+          <Experiences
+            company={"Saraos Agency"}
+            time={"MAR21 to MAY22"}
+            site={"San Juan, Spain"}
+          />
+          <Experiences
+            company={"Estudio Pérez Medina"}
+            time={"FEB18 to JAN19"}
+            site={"Mad, Spain"}
+          />
+          <Experiences
+            company={"Marmarela"}
+            time={"MAY15 to AUG19"}
+            site={"Alc, Spain"}
+          />
+          <Experiences
+            company={"Accesorios Costablanca"}
+            time={"since 2016"}
+            site={"Alc, Spain"}
+          />
+          <Experiences
+            company={"Nightfall"}
+            time={"2014"}
+            site={"Alc, Spain"}
+          />
+          <ExperienceBanner />
+        </div>
+        <div className="h-[576px] w-screen bg-gray text-center pt-3">
+          MAS COSAS
+        </div>
       </div>
     </motion.div>
   );
 }
+
+const ExperienceBanner = () => {
+  return (
+    <div className="h-7 bg-white text-xl font-semibold overflow-hidden">
+      · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE ·
+      EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE ·
+      EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE ·
+      EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE ·
+      EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE · EXPERIENCE ·
+    </div>
+  );
+};
+const Experiences = ({ company, time, site }) => {
+  return (
+    <div className="h-8 bg-black border-t-[1px] border-t-yellow text-white flex justify-between items-center">
+      <div className="uppercase">{company}</div>
+      <div className="flex gap-7">
+        <span className="text-left w-52">{time}</span>
+        <span className="text-left w-52">{site}</span>
+      </div>
+    </div>
+  );
+};
 
 const bio1 =
   "¿Sabes el día que decides ir con tu cita a un buen restaurante a cenar tranquilo? Ignoras la tipografía, la etiqueta recargada del vino… Lo dejas pasar. Pero el camarero te trae la carta y de repente… ¡pam! el texto no está bien alineado.";
