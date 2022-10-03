@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import placeholder from "../Images/placeholder.jpg";
+import { motion } from 'framer-motion';
+// import placeholder from "../Images/placeholder.jpg";
+import imgHome from '../Images/Prueba-home.jpg';
 
 export default function Home() {
   return (
@@ -9,8 +10,12 @@ export default function Home() {
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
     >
-      <img className={`h-[97%]`} src={placeholder} alt="homeBackground"></img>
-      <div className="h-[3%] text-white flex justify-between items-center text-xs mx-24">
+      <img
+        className={`h-[97%] object-cover`}
+        src={imgHome}
+        alt="homeBackground"
+      />
+      <div className="h-[3%] text-white flex justify-evenly  items-center text-xs">
         <div>{`Copyright hextxrlxpez 2022©`}</div>
         <div className="flex gap-7">
           <span className="text-left w-52">{`Política de privacidad.`}</span>
