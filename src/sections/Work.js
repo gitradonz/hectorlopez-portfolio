@@ -1,20 +1,26 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+// import img1 from '../Images/Prueba-home.jpg';
+// import img2 from '../Images/prueba-2.jpg';
+// import img3 from '../Images/prueba-3.jpg';
+// import img4 from '../Images/prueba-4.jpg';
+// import img5 from '../Images/prueba-5.jpg';
+// import img6 from '../Images/prueba-6.jpg';
 
 const variantsLeft = {
   rest: {
     opacity: 0,
     transition: {
       duration: 0.5,
-      type: "tween",
-      ease: "easeInOut",
+      type: 'tween',
+      ease: 'easeInOut',
     },
   },
   hover: {
     opacity: 1,
     transition: {
       duration: 0.5,
-      type: "tween",
-      ease: "easeInOut",
+      type: 'tween',
+      ease: 'easeInOut',
     },
   },
 };
@@ -23,16 +29,16 @@ const variantsRight = {
     opacity: 0,
     transition: {
       duration: 0.5,
-      type: "tween",
-      ease: "easeInOut",
+      type: 'tween',
+      ease: 'easeInOut',
     },
   },
   hover: {
     opacity: 1,
     transition: {
       duration: 0.5,
-      type: "tween",
-      ease: "easeInOut",
+      type: 'tween',
+      ease: 'easeInOut',
     },
   },
 };
@@ -50,13 +56,29 @@ export default function Work() {
           <EachWork
             title="  WINGSTOWN BRAND  -  "
             variants={variantsLeft}
-            lado={"izq"}
+            lado={'izq'}
+            img={'img1'}
           />
-          <EachWork title=" 5505 - " variants={variantsRight} lado={"der"} />
+          <EachWork
+            title=" 5505 - "
+            variants={variantsRight}
+            lado={'der'}
+            img={'img2'}
+          />
         </div>
         <div className="flex gap-7 h-full w-full">
-          <EachWork title=" MO-MAD - " variants={variantsLeft} lado={"izq"} />
-          <EachWork title=" HANGAR - " variants={variantsRight} lado={"der"} />
+          <EachWork
+            title=" MO-MAD - "
+            variants={variantsLeft}
+            lado={'izq'}
+            img={'img3'}
+          />
+          <EachWork
+            title=" HANGAR - "
+            variants={variantsRight}
+            lado={'der'}
+            img={'img4'}
+          />
         </div>
       </div>
       <div className="flex flex-col h-screen w-full gap-7">
@@ -64,20 +86,28 @@ export default function Work() {
           <EachWork
             title=" OPTICA EL ALTET  -  "
             variants={variantsLeft}
-            lado={"izq"}
+            lado={'izq'}
+            img={'img5'}
           />
           <EachWork
             title=" ACC. COSTABLANCA  -  "
             variants={variantsRight}
-            lado={"der"}
+            lado={'der'}
+            img={'img6'}
           />
         </div>
         <div className="flex gap-7 h-full w-full">
-          <EachWork title=" OTROS  -  " variants={variantsLeft} lado={"izq"} />
+          <EachWork
+            title=" OTROS  -  "
+            variants={variantsLeft}
+            lado={'izq'}
+            img={'img1'}
+          />
           <EachWork
             title=" SP5505  -  "
             variants={variantsRight}
-            lado={"der"}
+            lado={'der'}
+            img={'img2'}
           />
         </div>
       </div>
@@ -85,9 +115,9 @@ export default function Work() {
   );
 }
 
-function EachWork({ title, variants, lado }) {
+function EachWork({ title, variants, lado, img }) {
   return (
-    <div className="w-full h-full bg-gray">
+    <div className={`w-full h-full bg-gray ${img}`}>
       <motion.div
         initial="rest"
         whileHover="hover"
@@ -98,7 +128,7 @@ function EachWork({ title, variants, lado }) {
           variants={variants}
           className="text-yellow text-[64px] font-semibold"
         >
-          {lado === "izq" ? (
+          {lado === 'izq' ? (
             <MarqueeIzq title={title} />
           ) : (
             <Marquee title={title} />

@@ -11,10 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #787878;
   overflow-x: hidden;
-  
 }
 div {
-  -webkit-user-select: none; /* Safari */        
+  -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
@@ -29,7 +28,6 @@ code {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
 
 .marquee {
   transform: translateY(200%);
@@ -53,7 +51,6 @@ code {
     transform: translate(-100%, 0);
   }
 }
-
 
 .marqueeIzq {
   width: 49%;
@@ -79,8 +76,8 @@ code {
   }
 }
 
-.noSelectable{
-  -webkit-user-select: none; /* Safari */        
+.noSelectable {
+  -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
@@ -93,10 +90,40 @@ code {
 }
 
 @keyframes animate {
-  0%{
+  0% {
     transform: translateX(0);
-  } 
-  100%{
+  }
+  100% {
     transform: translateX(-100%);
   }
+}
+
+.img1 {
+  background-image: url('./Images/prueba-1.jpg');
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url('./Images/prueba-2.jpg');
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url('./Images/prueba-3.jpg');
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url('./Images/prueba-4.jpg');
+  background-size: cover;
+}
+
+.img5 {
+  background-image: url('./Images/prueba-5.jpg');
+  background-size: cover;
+}
+
+.img6 {
+  background-image: url('./Images/prueba-6.jpg');
+  background-size: cover;
 }
