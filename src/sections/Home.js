@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-// import placeholder from "../Images/placeholder.jpg";
 import imgHome from '../Images/Prueba-home.jpg';
 
 export default function Home() {
@@ -11,11 +10,11 @@ export default function Home() {
       exit={{ opacity: 0 }}
     >
       <img
-        className={`h-[97%] object-cover`}
+        className={`h-screen lg:h-[97%] object-cover`}
         src={imgHome}
         alt="homeBackground"
       />
-      <div className="h-[3%] text-white flex justify-evenly  items-center text-xs">
+      <div className="h-0 text-white flex justify-evenly  items-center text-xs lg:visible lg:h-[3%] invisible">
         <div>{`Copyright hextxrlxpez 2022©`}</div>
         <div className="flex gap-7">
           <span className="text-left w-52">{`Política de privacidad.`}</span>
