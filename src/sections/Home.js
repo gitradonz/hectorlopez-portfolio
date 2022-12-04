@@ -4,7 +4,7 @@ import imgHome from '../Images/Prueba-home.jpg';
 export default function Home() {
   return (
     <motion.div
-      className="h-screen flex flex-col bg-gray-800"
+      className="h-screen flex flex-col bg-gray-800 overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
