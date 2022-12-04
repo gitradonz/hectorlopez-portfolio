@@ -20,24 +20,24 @@ export default function AbsoluteMenu() {
         <Link
           to="/about"
           className={`${
-            !isOpen && 'invisible'
-          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[400ms] noSelectable`}
+            isOpen ? 'visible' : 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[300ms] noSelectable`}
         >
           About
         </Link>
         <Link
           to="/work"
           className={`${
-            !isOpen && 'invisible'
-          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[300ms] noSelectable`}
+            isOpen ? 'visible' : 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[225ms] noSelectable`}
         >
           Work
         </Link>
         <Link
           to="/5505"
           className={`${
-            !isOpen && 'invisible'
-          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[200ms] noSelectable`}
+            isOpen ? 'visible' : 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[150ms] noSelectable`}
         >
           5505
         </Link>
@@ -45,7 +45,7 @@ export default function AbsoluteMenu() {
           to="/contact"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[100ms] noSelectable`}
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[75s] noSelectable`}
         >
           Contact
         </Link>
