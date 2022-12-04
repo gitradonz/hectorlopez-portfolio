@@ -12,7 +12,7 @@ export default function AbsoluteMenu() {
         <button
           className={`${
             isOpen && 'rotate-45'
-          } lg:invisible lg:h-0 text-white transition-all duration-500 noSelectable mt-8 mb-4`}
+          } lg:hidden text-white transition-all duration-500 noSelectable mt-8 mb-4`}
           onClick={() => setIsOpen((p) => !p)}
         >
           <img src={mas} alt="mas" className="w-10 h-10" />
@@ -21,7 +21,7 @@ export default function AbsoluteMenu() {
           to="/about"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[300ms] noSelectable font-medium`}
+          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[300ms] noSelectable font-medium lg:visible`}
           onClick={() => setIsOpen(false)}
         >
           About
@@ -30,7 +30,7 @@ export default function AbsoluteMenu() {
           to="/work"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[225ms] noSelectable font-medium`}
+          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[225ms] noSelectable font-medium lg:visible`}
           onClick={() => setIsOpen(false)}
         >
           Work
@@ -39,7 +39,7 @@ export default function AbsoluteMenu() {
           to="/5505"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[150ms] noSelectable font-medium`}
+          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[150ms] noSelectable font-medium lg:visible`}
           onClick={() => setIsOpen(false)}
         >
           5505
@@ -48,7 +48,7 @@ export default function AbsoluteMenu() {
           to="/contact"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[75ms] noSelectable font-medium`}
+          } text-7xl lg:text-2xl text-center h-[95px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[75ms] noSelectable font-medium lg:visible`}
           onClick={() => setIsOpen(false)}
         >
           Contact
@@ -56,7 +56,7 @@ export default function AbsoluteMenu() {
       </div>
       <Link to="/">
         <img
-          className="fixed top-8 right-1/2 w-18 translate-x-1/2 z-50 lg:pl-7 lg:w-36 lg:-translate-y-8 lg:left-0 lg:top-1/2"
+          className="fixed top-8 right-1/2 w-18 translate-x-1/2 z-50 lg:w-28 lg:-translate-y-1/2 lg:left-0 lg:top-1/2"
           src={logo}
           alt="logo"
         />
