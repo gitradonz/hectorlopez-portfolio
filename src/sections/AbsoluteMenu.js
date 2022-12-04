@@ -5,6 +5,9 @@ export default function AbsoluteMenu() {
   return (
     <div>
       <div className="flex flex-col justify-evenly pt-20 lg:pt-7 fixed top-0 items-center w-screen z-50 lg:flex-row">
+        <div className="text-7xl lg:text-2xl text-center h-[85px]  lg:h-0 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable">
+          +
+        </div>
         <Link
           to="/about"
           className="text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable"
@@ -32,7 +35,7 @@ export default function AbsoluteMenu() {
       </div>
       <Link to="/">
         <img
-          className="fixed top-8 right-1/2 w-18 translate-x-3.5 z-50 lg:pl-7 lg:w-36 lg:-translate-y-8 lg:left-0 lg:top-1/2"
+          className="fixed top-8 right-1/2 w-18 translate-x-1/2 z-50 lg:pl-7 lg:w-36 lg:-translate-y-8 lg:left-0 lg:top-1/2"
           src={logo}
           alt="logo"
         />
