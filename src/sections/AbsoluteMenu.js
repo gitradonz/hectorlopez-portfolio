@@ -8,7 +8,7 @@ export default function AbsoluteMenu() {
 
   return (
     <div>
-      <div className="flex flex-col justify-evenly pt-20 lg:pt-7 fixed top-0 items-center w-screen z-50 lg:flex-row gap-5">
+      <div className="flex flex-col justify-evenly pt-20 lg:pt-7 fixed top-0 items-center w-screen z-50 lg:flex-row">
         <button
           className={`${
             isOpen && 'rotate-45'
@@ -45,7 +45,7 @@ export default function AbsoluteMenu() {
           to="/contact"
           className={`${
             isOpen ? 'visible' : 'invisible'
-          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[75s] noSelectable`}
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[75ms] noSelectable`}
         >
           Contact
         </Link>
