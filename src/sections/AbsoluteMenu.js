@@ -1,34 +1,51 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.svg';
+import mas from '../Images/mas.svg';
 
 export default function AbsoluteMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <div className="flex flex-col justify-evenly pt-20 lg:pt-7 fixed top-0 items-center w-screen z-50 lg:flex-row">
-        <div className="text-7xl lg:text-2xl text-center h-[85px]  lg:h-0 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable">
-          +
-        </div>
+      <div className="flex flex-col justify-evenly pt-20 lg:pt-7 fixed top-0 items-center w-screen z-50 lg:flex-row gap-5">
+        <button
+          className={`${
+            isOpen && 'rotate-45'
+          } lg:invisible lg:h-0 text-white transition-all duration-500 noSelectable mt-8`}
+          onClick={() => setIsOpen((p) => !p)}
+        >
+          <img src={mas} alt="mas" className="w-10 h-10" />
+        </button>
         <Link
           to="/about"
-          className="text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable"
+          className={`${
+            !isOpen && 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[400ms] noSelectable`}
         >
           About
         </Link>
         <Link
           to="/work"
-          className="text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable"
+          className={`${
+            !isOpen && 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[300ms] noSelectable`}
         >
           Work
         </Link>
         <Link
           to="/5505"
-          className="text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable"
+          className={`${
+            !isOpen && 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[200ms] noSelectable`}
         >
           5505
         </Link>
         <Link
           to="/contact"
-          className="text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-300 noSelectable"
+          className={`${
+            isOpen ? 'visible' : 'invisible'
+          } text-7xl lg:text-2xl text-center h-[105px] lg:h-10 text-white z-50 hover:text-yellow transition-all duration-[100ms] noSelectable`}
         >
           Contact
         </Link>
